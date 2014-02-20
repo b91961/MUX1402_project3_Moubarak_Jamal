@@ -39,6 +39,27 @@
     information2Label.text = self.currentSocial.description2;
     information3Label.text = self.currentSocial.description3;
     imageLabel.image = self.currentSocial.socialImage;
+    
+    webView = [[UIWebView alloc] init];
+    if(webView != nil)
+    {
+        //create webframe and load website from the information2Label string
+        [webView setFrame:CGRectMake(0, 64.0f, 320.0f, 371.0f)];
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:information2Label.text]]];
+        //webView.scrollView.layer.cornerRadius = 10;
+        //webView.scrollView.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        //webView.scrollView.layer.borderWidth = 3.0f;
+        webView.scalesPageToFit = YES;
+        webView.tag = 3;
+    }
+    if (webOpen == false)
+    {
+        //open the webView
+        webOpen = true;
+        webBack.hidden = NO;
+        webForward.hidden = NO;
+        [[self view] addSubview:webView];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,7 +90,7 @@
             if(webView != nil)
             {
                 //create webframe and load website from the information2Label string
-                [webView setFrame:CGRectMake(0, 20.0f, 320.0f, 415.0f)];
+                [webView setFrame:CGRectMake(0, 64.0f, 320.0f, 371.0f)];
                 [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:information2Label.text]]];
                 //webView.scrollView.layer.cornerRadius = 10;
                 //webView.scrollView.layer.borderColor = [UIColor darkGrayColor].CGColor;
@@ -83,40 +104,7 @@
                 webOpen = true;
                 webBack.hidden = NO;
                 webForward.hidden = NO;
-                [sender setTitle:@"Close Web" forState:UIControlStateNormal];
-                [[self view] addSubview:webView];
-            }else if (webOpen == true)
-            {
-                //open the webView and set button text to open web
-                [[self.view viewWithTag:3] removeFromSuperview];
-                webOpen = false;
-                webBack.hidden = YES;
-                webForward.hidden = YES;
-                [sender setTitle:@"Open Web" forState:UIControlStateNormal];
-            }
-            //button tag for webView button on iPad
-        }else if (button.tag == 2)
-        {
-            webView = [[UIWebView alloc] init];
-            if(webView != nil)
-            {
-                //create webframe and load website from the information2Label string
-                [webView setFrame:CGRectMake(0, 65.0f, 768.0f, 685.0f)];
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:information2Label.text]]];
-                webView.scrollView.layer.cornerRadius = 10;
-                webView.scrollView.layer.borderColor = [UIColor darkGrayColor].CGColor;
-                webView.scrollView.layer.borderWidth = 3.0f;
-                webView.scalesPageToFit = YES;
-                webView.scalesPageToFit = YES;
-                webView.tag = 3;
-            }
-            if (webOpen == false)
-            {
-                //open the webView and set button text to close
-                webOpen = true;
-                webBack.hidden = NO;
-                webForward.hidden = NO;
-                [sender setTitle:@"Close Web" forState:UIControlStateNormal];
+                [sender setTitle:@"Info" forState:UIControlStateNormal];
                 [[self view] addSubview:webView];
             }else if (webOpen == true)
             {
