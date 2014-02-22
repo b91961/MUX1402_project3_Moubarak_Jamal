@@ -10,6 +10,7 @@
 #import "SocialCustomClass.h"
 @interface DetailViewController : UIViewController
 {
+    IBOutlet UILabel *navName;
     IBOutlet UILabel *titleLabel;
     IBOutlet UILabel *secondaryLabel;
     IBOutlet UILabel *information2Label;

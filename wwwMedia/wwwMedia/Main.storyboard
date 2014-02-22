@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Details" id="jp5-DZ-WyS">
+                                    <navigationItem id="jp5-DZ-WyS">
                                         <barButtonItem key="leftBarButtonItem" id="Aih-lV-Lni">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29F-UX-WQH">
                                                 <rect key="frame" x="16" y="7" width="34" height="30"/>
@@ -167,6 +167,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="navName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aip-Fb-AgZ">
+                                <rect key="frame" x="105" y="31" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -174,6 +182,7 @@
                         <outlet property="imageLabel" destination="dQB-F8-4Tz" id="GLB-er-bEl"/>
                         <outlet property="information2Label" destination="K7i-Fi-H3g" id="QPV-PB-TBN"/>
                         <outlet property="information3Label" destination="fYf-ws-mLU" id="mwu-Mg-Ou9"/>
+                        <outlet property="navName" destination="Aip-Fb-AgZ" id="h5O-Vt-yd7"/>
                         <outlet property="secondaryLabel" destination="1k6-JV-Jdn" id="bgj-P5-BBh"/>
                         <outlet property="titleLabel" destination="xJG-uw-Qvu" id="QPf-So-ixY"/>
                         <outlet property="webBack" destination="t0s-tK-32K" id="cMC-dA-eOy"/>

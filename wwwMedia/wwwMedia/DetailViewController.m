@@ -26,6 +26,9 @@
 
 - (void)viewDidLoad
 {
+    //assign title at top of page
+    navName.text = self.currentSocial.name;
+    
     [super viewDidLoad];
     
     webOpen = false;
