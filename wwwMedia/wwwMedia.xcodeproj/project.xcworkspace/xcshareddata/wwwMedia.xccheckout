@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5EB4CDEE-B22A-472F-B7AA-8A58E378DCF6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wwwMedia</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>805E88C4-0967-4B18-8CB1-35FF25F74DB3</key>
+		<string>https://github.com/b91961/MUX1402_project3_Moubarak_Jamal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wwwMedia/wwwMedia.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>805E88C4-0967-4B18-8CB1-35FF25F74DB3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/b91961/MUX1402_project3_Moubarak_Jamal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>805E88C4-0967-4B18-8CB1-35FF25F74DB3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>805E88C4-0967-4B18-8CB1-35FF25F74DB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MUX1402_project4_Moubarak_Jamal</string>
+		</dict>
+	</array>
+</dict>
+</plist>

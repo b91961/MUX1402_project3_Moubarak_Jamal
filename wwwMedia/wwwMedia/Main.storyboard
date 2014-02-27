@@ -152,17 +152,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="jp5-DZ-WyS">
-                                        <barButtonItem key="leftBarButtonItem" id="Aih-lV-Lni">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29F-UX-WQH">
-                                                <rect key="frame" x="16" y="7" width="34" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="back">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="iOW-0Z-BCe" kind="unwind" unwindAction="done:" id="qCq-Qc-p77"/>
-                                                </connections>
-                                            </button>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="8R3-QV-8wf">
+                                            <connections>
+                                                <segue destination="iOW-0Z-BCe" kind="unwind" unwindAction="done:" id="di0-a3-JOH"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
