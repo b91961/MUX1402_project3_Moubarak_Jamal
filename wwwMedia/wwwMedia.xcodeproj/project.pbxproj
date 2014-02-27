@@ -54,6 +54,8 @@
 		57D1889318AB8AE600B45AF3 /* YouTube-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D1886D18AB8AE600B45AF3 /* YouTube-Icon.png */; };
 		57D1889518AB8B0D00B45AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57D1889418AB8B0D00B45AF3 /* InfoPlist.strings */; };
 		57D1889818AB8DD000B45AF3 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D1889718AB8DD000B45AF3 /* SurveyViewController.m */; };
+		57FB9E7318BF3B79009DB1B8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FB9E7218BF3B79009DB1B8 /* SettingsViewController.m */; };
+		57FB9E7618BF3CBF009DB1B8 /* HandlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FB9E7518BF3CBF009DB1B8 /* HandlesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,10 @@
 		57D1889418AB8B0D00B45AF3 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		57D1889618AB8DD000B45AF3 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
 		57D1889718AB8DD000B45AF3 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		57FB9E7118BF3B79009DB1B8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		57FB9E7218BF3B79009DB1B8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		57FB9E7418BF3CBF009DB1B8 /* HandlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlesViewController.h; sourceTree = "<group>"; };
+		57FB9E7518BF3CBF009DB1B8 /* HandlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,10 @@
 				57D187DB18AB76B400B45AF3 /* AddEventController.m */,
 				57D1889618AB8DD000B45AF3 /* SurveyViewController.h */,
 				57D1889718AB8DD000B45AF3 /* SurveyViewController.m */,
+				57FB9E7418BF3CBF009DB1B8 /* HandlesViewController.h */,
+				57FB9E7518BF3CBF009DB1B8 /* HandlesViewController.m */,
+				57FB9E7118BF3B79009DB1B8 /* SettingsViewController.h */,
+				57FB9E7218BF3B79009DB1B8 /* SettingsViewController.m */,
 				57D187B418AB547000B45AF3 /* Images.xcassets */,
 				57D1884718AB8AE600B45AF3 /* img */,
 				57D187A018AB547000B45AF3 /* Supporting Files */,
@@ -404,7 +414,9 @@
 				57D187A618AB547000B45AF3 /* main.m in Sources */,
 				57D187D618AB62E300B45AF3 /* SocialCustomClass.m in Sources */,
 				57D187D318AB60A900B45AF3 /* CustomCell.m in Sources */,
+				57FB9E7618BF3CBF009DB1B8 /* HandlesViewController.m in Sources */,
 				57D1889818AB8DD000B45AF3 /* SurveyViewController.m in Sources */,
+				57FB9E7318BF3B79009DB1B8 /* SettingsViewController.m in Sources */,
 				57D187DC18AB76B400B45AF3 /* AddEventController.m in Sources */,
 				57D187D918AB633200B45AF3 /* DetailViewController.m in Sources */,
 			);
