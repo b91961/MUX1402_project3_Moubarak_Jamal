@@ -47,7 +47,7 @@
         youtubeDelegate = [defaults objectForKey:@"savedYoutube"];
         
         if (facebookDelegate != nil)
-        {
+        {            
             _facebookLabel.text = facebookDelegate;
             _googleLabel.text = googleDelegate;
             _twitterLabel.text = twitterDelegate;
@@ -103,13 +103,20 @@
 -(void)DidCloseWith:(SettingsViewController *)controller facebook:(NSString *)facebookText google:(NSString *)googleText twitter:(NSString *)twitterText instagram:(NSString *)instagramText linkedin:(NSString *)linkedinText youtube:(NSString *)youtubeText
 {
     [controller dismissViewControllerAnimated:YES completion:nil];
-    // Get selectable data from AddEventController
-    self.facebookLabel.text = facebookText;
-    self.googleLabel.text = googleText;
-    self.twitterLabel.text = twitterText;
-    self.instagramLabel.text = instagramText;
-    self.linkedinLabel.text = linkedinText;
-    self.youtubeLabel.text = youtubeText;
+    // Get selectable data from SettingsViewController
+    NSString *myFacebook = [NSString stringWithFormat:@"https://www.facebook.com/%@", facebookText];
+    NSString *myGoogle = [NSString stringWithFormat:@"https://plus.google.com/%@", googleText];
+    NSString *myTwitter = [NSString stringWithFormat:@"https://twitter.com/%@", twitterText];
+    NSString *myInstagram = [NSString stringWithFormat:@"http://instagram.com/%@", instagramText];
+    NSString *myLinkedin = [NSString stringWithFormat:@"http://www.linkedin.com/%@", linkedinText];
+    NSString *myYoutube = [NSString stringWithFormat:@"https://www.youtube.com/%@", youtubeText];
+    
+    self.facebookLabel.text = myFacebook;
+    self.googleLabel.text = myGoogle;
+    self.twitterLabel.text = myTwitter;
+    self.instagramLabel.text = myInstagram;
+    self.linkedinLabel.text = myLinkedin;
+    self.youtubeLabel.text = myYoutube;
     
     defaults = [NSUserDefaults standardUserDefaults];
     if (defaults != nil)
